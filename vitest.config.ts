@@ -4,6 +4,7 @@ export default defineConfig({
   test: {
     coverage: {
       enabled: true,
+      reporter: ["text", "lcov"],
       reportsDirectory: "node_modules/.coverage",
     },
   },

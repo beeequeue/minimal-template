@@ -91,6 +91,11 @@ jobs:
 
       - run: pnpm test
 
+      - uses: codecov/codecov-action@v2
+        with:
+          directory: node_modules/.coverage
+          fail_ci_if_error: true
+
   build:
     runs-on: ubuntu-latest
 
