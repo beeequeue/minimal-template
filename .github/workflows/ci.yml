@@ -95,7 +95,7 @@ jobs:
 
       - uses: codecov/codecov-action@v2
         with:
-          directory: node_modules/.coverage
+          files: node_modules/.coverage/lcov.info
           fail_ci_if_error: true
 
   build:
