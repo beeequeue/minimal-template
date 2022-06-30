@@ -4,7 +4,7 @@ export default defineConfig({
   entryPoints: ["src/index.ts"],
 
   target: "node16",
-  format: ["cjs"],
+  format: ["cjs", "esm"],
   sourcemap: true,
   dts: true,
 
