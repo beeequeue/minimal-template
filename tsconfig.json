@@ -1,5 +1,5 @@
 {
-  "extends": "@tsconfig/node16/tsconfig.json",
+  "extends": "@tsconfig/node16-strictest/tsconfig.json",
   "compilerOptions": {
     // Output
     "noEmit": true,
@@ -14,15 +14,15 @@
       "~/*": ["src/*"]
     },
 
-    // Typechecking
-    "skipLibCheck": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "forceConsistentCasingInFileNames": true,
+    // Lessen strictness
+    "importsNotUsedAsValues": "remove",
+    "noImplicitReturns": false,
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": false,
+    "exactOptionalPropertyTypes": false,
 
     // Extra types
-    "lib": ["es2020"],
+    "lib": ["es2021", "es2022"],
     "types": []
   },
 
