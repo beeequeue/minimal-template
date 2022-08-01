@@ -4,7 +4,7 @@
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@7.4.1",
+  "packageManager": "pnpm@7.8.0",
   "engines": {
     "node": ">=16.15"
   },
@@ -17,11 +17,10 @@
     ]
   },
   "scripts": {
-    "dev": "dev",
+    "dev": "tsup --watch",
     "build": "tsup",
     "lint": "eslint src",
-    "test": "vitest run",
-    "test:dev": "vitest",
+    "test": "vitest",
     "typecheck": "tsc --noEmit --project tsconfig.json",
     "prepare": "simple-git-hooks"
   },
