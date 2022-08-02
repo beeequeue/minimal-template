@@ -15,3 +15,11 @@ It has:
 - [vitest](https://vitest.dev/) for testing
 - All the editor configurations you might need
 - Automatic code formatting on committing with prettier and simple-git-hooks
+
+# Use
+
+Run `copy.mjs` with [`zx`](https://github.com/google/zx):
+
+```shell
+zx copy.mjs [path to new project]
+```
