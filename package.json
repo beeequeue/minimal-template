@@ -25,16 +25,16 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@beequeue/eslint-plugin": "0.7.0-beta.0",
+    "@beequeue/eslint-plugin": "0.8.0",
     "@tsconfig/node16-strictest": "1.0.3",
     "c8": "7.12.0",
-    "dotenv": "16.0.1",
-    "eslint": "8.21.0",
+    "dotenv": "16.0.2",
+    "eslint": "8.22.0",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
     "simple-git-hooks": "2.8.0",
-    "tsup": "6.2.1",
-    "typescript": "4.7.4",
-    "vitest": "0.20.2"
+    "tsup": "6.2.3",
+    "typescript": "4.8.2",
+    "vitest": "0.22.1"
   }
 }
