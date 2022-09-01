@@ -7,9 +7,9 @@ devDependencies:
   '@tsconfig/node16-strictest':
     specifier: 1.0.3
     version: 1.0.3
-  c8:
-    specifier: 7.12.0
-    version: 7.12.0
+  '@vitest/coverage-c8':
+    specifier: 0.22.1
+    version: 0.22.1
   dotenv:
     specifier: 16.0.2
     version: 16.0.2
@@ -373,6 +373,24 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.36.1
       eslint-visitor-keys: 3.3.0
+    dev: true
+
+  /@vitest/coverage-c8/0.22.1:
+    resolution: {integrity: sha512-KOOYpO7EGpaF+nD8GD+Y05D0JtZp12NUu6DdLXvBPqSOPo2HkZ7KNBtfR0rb6gOy3NLtGiWTYTzCwhajgb2HlA==}
+    dependencies:
+      c8: 7.12.0
+      vitest: 0.22.1
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - happy-dom
+      - jsdom
+      - less
+      - sass
+      - stylus
+      - supports-color
+      - terser
     dev: true
 
   /acorn-jsx/5.3.2_acorn@8.8.0:
