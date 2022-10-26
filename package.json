@@ -4,7 +4,7 @@
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@7.8.0",
+  "packageManager": "pnpm@7.14.0",
   "engines": {
     "node": ">=16.15"
   },
@@ -25,16 +25,16 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@beequeue/eslint-plugin": "0.8.0",
-    "@tsconfig/node16-strictest": "1.0.3",
-    "@vitest/coverage-c8": "0.22.1",
-    "dotenv": "16.0.2",
-    "eslint": "8.22.0",
+    "@beequeue/eslint-plugin": "1.0.2",
+    "@tsconfig/node16-strictest": "1.0.4",
+    "@vitest/coverage-c8": "0.24.3",
+    "dotenv": "16.0.3",
+    "eslint": "8.26.0",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
-    "simple-git-hooks": "2.8.0",
-    "tsup": "6.2.3",
-    "typescript": "4.8.2",
-    "vitest": "0.22.1"
+    "simple-git-hooks": "2.8.1",
+    "tsup": "6.3.0",
+    "typescript": "4.8.4",
+    "vitest": "0.24.3"
   }
 }
