@@ -26,5 +26,5 @@
     "types": []
   },
 
-  "include": ["src/**/*.ts", "*.ts", "./copy.mjs"]
+  "include": ["src/**/*.ts"]
 }
