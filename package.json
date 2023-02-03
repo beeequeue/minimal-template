@@ -4,9 +4,9 @@
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@7.25.0",
+  "packageManager": "pnpm@7.26.3",
   "engines": {
-    "node": ">=16.15"
+    "node": ">=18"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@beequeue/eslint-plugin": "1.1.2",
-    "@tsconfig/node16-strictest": "1.0.4",
+    "@tsconfig/node18-strictest": "1.0.0",
     "@vitest/coverage-c8": "0.27.2",
     "dotenv": "16.0.3",
     "eslint": "8.32.0",
