@@ -1,7 +1,7 @@
 /** @type import("eslint-define-config").ESLintConfig */
 module.exports = {
   root: true,
-  ignorePatterns: ["*eslintrc*"],
+  ignorePatterns: ["*eslintrc*", "copy.ts"],
   extends: ["plugin:@beequeue/base", "plugin:@beequeue/typescript"],
 
   overrides: [
