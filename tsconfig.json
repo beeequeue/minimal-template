@@ -20,6 +20,7 @@
     "noPropertyAccessFromIndexSignature": false,
     "noUncheckedIndexedAccess": false,
     "exactOptionalPropertyTypes": false,
+    "verbatimModuleSyntax": false,
 
     // Extra types
     "lib": ["es2021", "es2022"],
