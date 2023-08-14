@@ -9,6 +9,7 @@ export default defineConfig({
   outDir: "dist",
 
   env: {
+    // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
     NODE_ENV: process.env.NODE_ENV || "production",
     DEV: (process.env.NODE_ENV === "development") as unknown as string,
     PROD: (process.env.NODE_ENV === "production") as unknown as string,
@@ -16,8 +17,8 @@ export default defineConfig({
     GIT_SHA: JSON.stringify(gitSha),
   },
 
-  target: "node16",
-  format: ["cjs", "esm"],
+  target: "node20",
+  format: ["esm"],
   esbuildOptions: (options) => {
     options.supported = {
       // For better performance: https://github.com/evanw/esbuild/issues/951
