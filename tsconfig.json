@@ -6,7 +6,8 @@
     "sourceMap": true,
 
     // Modules
-    "moduleResolution": "node",
+    "module": "es2022",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "baseUrl": "./src",
@@ -23,9 +24,9 @@
     "verbatimModuleSyntax": false,
 
     // Extra types
-    "lib": ["es2021", "es2022"],
-    "types": []
+    "types": ["node"]
   },
 
-  "include": ["src/**/*.ts"]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist", "copy.ts"]
 }
