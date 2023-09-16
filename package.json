@@ -26,19 +26,34 @@
   },
   "devDependencies": {
     "@beequeue/eslint-plugin": "3.0.1",
-    "@tsconfig/node20": "20.1.1",
-    "@tsconfig/strictest": "2.0.1",
-    "@types/node": "20.5.0",
-    "@vitest/coverage-v8": "0.34.1",
+    "@tsconfig/node20": "20.1.2",
+    "@tsconfig/strictest": "2.0.2",
+    "@types/node": "20.6.2",
+    "@vitest/coverage-v8": "0.34.4",
     "dotenv": "16.3.1",
-    "eslint": "8.47.0",
+    "eslint": "8.49.0",
     "eslint-define-config": "1.23.0",
-    "lint-staged": "14.0.0",
-    "prettier": "3.0.1",
+    "lint-staged": "14.0.1",
+    "prettier": "3.0.3",
     "simple-git-hooks": "2.9.0",
     "tsup": "7.2.0",
-    "typescript": "5.1.6",
+    "typescript": "5.2.2",
     "vite": "4.4.9",
-    "vitest": "0.34.1"
+    "vitest": "0.34.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "array-includes": "npm:@nolyfill/array-includes@latest",
+      "array.prototype.flat": "npm:@nolyfill/array.prototype.flat@latest",
+      "array.prototype.flatmap": "npm:@nolyfill/array.prototype.flatmap@latest",
+      "array.prototype.tosorted": "npm:@nolyfill/array.prototype.tosorted@latest",
+      "has": "npm:@nolyfill/has@latest",
+      "object.assign": "npm:@nolyfill/object.assign@latest",
+      "object.entries": "npm:@nolyfill/object.entries@latest",
+      "object.fromentries": "npm:@nolyfill/object.fromentries@latest",
+      "object.hasown": "npm:@nolyfill/object.hasown@latest",
+      "object.values": "npm:@nolyfill/object.values@latest",
+      "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest"
+    }
   }
 }
