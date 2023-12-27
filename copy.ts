@@ -5,7 +5,7 @@ if (Deno.args[0] == null) {
   Deno.exit(1)
 }
 
-const newDir = $.path.resolve(Deno.args[0])
+const newDir = $.path(Deno.args[0]).resolve()
 console.log(`Creating new project at "${newDir}"`)
 
 const extraIgnore = new Set(["copy.mjs", "copy.ts"])
@@ -13,17 +13,15 @@ const files = (await $`git ls-tree -r main --name-only`.lines()).filter(
   (item) => Boolean(item) && !extraIgnore.has(item),
 )
 
-await $.fs.ensureDir(newDir, { recursive: true })
+await $`mkdir -p ${newDir}`
 for (const filePath of files) {
-  await $.fs.ensureDir($.path.resolve(newDir, $.path.dirname(filePath)), {
-    recursive: true,
-  })
-  await $.fs.copy(filePath, $.path.resolve(newDir, filePath), { overwrite: true })
+  await $`mkdir -p ${$.path(newDir, $.path(filePath).dirname()).resolve()}`
+  await $`cp ${filePath} ${$.path(newDir, filePath).resolve()}`
 }
 
 $.cd(newDir)
 
-const name = $.path.basename(Deno.args[0])
+const name = $.path(Deno.args[0]).basename()
 await Deno.writeTextFile(
   "README.md",
   `
