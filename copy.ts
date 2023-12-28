@@ -1,4 +1,5 @@
-import $ from "https://deno.land/x/dax/mod.ts"
+import $ from "https://deno.land/x/dax@0.31.0/mod.ts"
+import { copy } from "https://deno.land/std@0.182.0/fs/mod.ts"
 
 if (Deno.args[0] == null) {
   console.error("Missing directory argument")
@@ -15,8 +16,8 @@ const files = (await $`git ls-tree -r main --name-only`.lines()).filter(
 
 await $`mkdir -p ${newDir}`
 for (const filePath of files) {
-  await $`mkdir -p ${$.path(newDir, $.path(filePath).dirname()).resolve()}`
-  await $`cp ${filePath} ${$.path(newDir, filePath).resolve()}`
+  await $`mkdir -p ${newDir.join($.path(filePath).dirname()).toString()}`
+  await copy(filePath, newDir.join(filePath).toString())
 }
 
 $.cd(newDir)
