@@ -32,7 +32,6 @@ await Deno.writeTextFile(
 [![npm](https://img.shields.io/npm/v/${name})](https://www.npmjs.com/package/${name})
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/${name})
 ![node-current](https://img.shields.io/node/v/${name})
-[![Codecov](https://img.shields.io/codecov/c/github/BeeeQueue/${name}?token=TOKEN_HERE)](https://app.codecov.io/github/BeeeQueue/${name})
 -->
 `.trim(),
 )
