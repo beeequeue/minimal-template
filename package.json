@@ -28,7 +28,7 @@
     "@beequeue/eslint-plugin": "4.0.1",
     "@tsconfig/node20": "20.1.2",
     "@tsconfig/strictest": "2.0.3",
-    "@types/node": "20.11.25",
+    "@types/node": "20.11.26",
     "dotenv": "16.4.5",
     "eslint": "8.57.0",
     "eslint-define-config": "2.1.0",
