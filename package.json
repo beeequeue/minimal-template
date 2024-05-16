@@ -1,5 +1,6 @@
 {
   "name": "@beequeue/project-template",
+  "type": "module",
   "version": "0.0.0",
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
