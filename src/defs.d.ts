@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/consistent-type-definitions */
-
 declare const NODE_ENV: string
 declare const DEV: boolean
 declare const PROD: boolean

@@ -1,9 +1,9 @@
-import { describe, expect, test } from "vitest"
+import { describe, expect, it } from "vitest"
 
 import { hello } from "./index.js"
 
 describe("test", () => {
-  test("test", () => {
+  it("test", () => {
     expect(hello).toBe("world")
   })
 })

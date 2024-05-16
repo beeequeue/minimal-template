@@ -1,4 +1,5 @@
 import { execSync } from "node:child_process"
+import process from "node:process"
 
 import { defineConfig } from "tsup"
 
@@ -9,7 +10,6 @@ export default defineConfig({
   outDir: "dist",
 
   env: {
-    // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
     NODE_ENV: process.env.NODE_ENV || "production",
     DEV: (process.env.NODE_ENV === "development") as unknown as string,
     PROD: (process.env.NODE_ENV === "production") as unknown as string,
