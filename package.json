@@ -36,9 +36,9 @@
     "lint-staged": "15.2.7",
     "prettier": "3.3.3",
     "simple-git-hooks": "2.11.1",
-    "tsup": "8.2.1",
-    "typescript": "5.5.3",
-    "vitest": "2.0.3"
+    "tsup": "8.2.2",
+    "typescript": "5.5.4",
+    "vitest": "2.0.4"
   },
   "pnpm": {
     "overrides": {
