@@ -17,7 +17,7 @@ export default defineConfig({
     GIT_SHA: JSON.stringify(gitSha),
   },
 
-  target: "node20",
+  target: "node22",
   format: ["esm"],
   esbuildOptions: (options) => {
     options.supported = {
