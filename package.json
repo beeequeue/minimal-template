@@ -42,7 +42,8 @@
   },
   "pnpm": {
     "overrides": {
-      "hasown": "npm:@nolyfill/hasown@latest"
+      "hasown": "npm:@nolyfill/hasown@^1",
+      "is-core-module": "npm:@nolyfill/is-core-module@^1"
     }
   }
 }
