@@ -5,8 +5,8 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  hasown: npm:@nolyfill/hasown@^1
-  is-core-module: npm:@nolyfill/is-core-module@^1
+  hasown: npm:@nolyfill/hasown@1.0.29
+  is-core-module: npm:@nolyfill/is-core-module@1.0.39
 
 importers:
 
