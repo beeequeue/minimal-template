@@ -5,8 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  function-bind: npm:@socketregistry/function-bind@^1
-  hasown: npm:@socketregistry/hasown@^1
   indent-string: npm:@socketregistry/indent-string@^1
   is-core-module: npm:@socketregistry/is-core-module@^1
   object-assign: npm:@socketregistry/object-assign@^1
@@ -28,15 +26,9 @@ importers:
       '@types/node':
         specifier: 22.10.1
         version: 22.10.1
-      dotenv:
-        specifier: 16.4.5
-        version: 16.4.5
       eslint:
         specifier: 9.16.0
         version: 9.16.0
-      eslint-define-config:
-        specifier: 2.1.0
-        version: 2.1.0
       nano-staged:
         specifier: 0.8.0
         version: 0.8.0
@@ -859,10 +851,6 @@ packages:
     resolution: {integrity: sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==}
     engines: {node: '>=6.0.0'}
 
-  dotenv@16.4.5:
-    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
-    engines: {node: '>=12'}
-
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
@@ -926,10 +914,6 @@ packages:
     resolution: {integrity: sha512-0Ndxo4qGhcewjTzw52TK06Mc00aDtHNTdeeW2JfONgDcLkRO/n/BteMRzNVpLQYxdCC/dFEilfM9fjjpGIJ9Og==}
     peerDependencies:
       eslint: ^9.5.0
-
-  eslint-define-config@2.1.0:
-    resolution: {integrity: sha512-QUp6pM9pjKEVannNAbSJNeRuYwW3LshejfyBBpjeMGaJjaDUpVps4C6KVR8R7dWZnD3i0synmrE36znjTkJvdQ==}
-    engines: {node: '>=18.0.0', npm: '>=9.0.0', pnpm: '>=8.6.0'}
 
   eslint-flat-config-utils@0.4.0:
     resolution: {integrity: sha512-kfd5kQZC+BMO0YwTol6zxjKX1zAsk8JfSAopbKjKqmENTJcew+yBejuvccAg37cvOrN0Mh+DVbeyznuNWEjt4A==}
@@ -1475,10 +1459,6 @@ packages:
   min-indent@1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
-
-  minimatch@10.0.1:
-    resolution: {integrity: sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==}
-    engines: {node: 20 || >=22}
 
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
@@ -2538,7 +2518,7 @@ snapshots:
       debug: 4.3.7
       fast-glob: 3.3.2
       is-glob: 4.0.3
-      minimatch: 10.0.1
+      minimatch: 9.0.5
       semver: 7.6.3
       ts-api-utils: 1.4.3(typescript@5.7.2)
     optionalDependencies:
@@ -2800,8 +2780,6 @@ snapshots:
     dependencies:
       esutils: 2.0.3
 
-  dotenv@16.4.5: {}
-
   eastasianwidth@0.2.0: {}
 
   electron-to-chromium@1.5.67: {}
@@ -2873,8 +2851,6 @@ snapshots:
       '@eslint/compat': 1.2.3(eslint@9.16.0)
       eslint: 9.16.0
       find-up-simple: 1.0.0
-
-  eslint-define-config@2.1.0: {}
 
   eslint-flat-config-utils@0.4.0:
     dependencies:
@@ -3654,10 +3630,6 @@ snapshots:
       picomatch: 2.3.1
 
   min-indent@1.0.1: {}
-
-  minimatch@10.0.1:
-    dependencies:
-      brace-expansion: 2.0.1
 
   minimatch@3.1.2:
     dependencies:
