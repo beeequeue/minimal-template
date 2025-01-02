@@ -4,8 +4,9 @@ export default antfu({
   ignores: ["**/*.json"],
   markdown: false,
   stylistic: false,
+  jsonc: false,
+  jsx: false,
   toml: false,
-  vue: false,
   yaml: false,
   test: { overrides: { "test/no-import-node-test": "off" } },
   typescript: {
