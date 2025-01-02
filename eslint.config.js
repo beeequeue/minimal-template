@@ -2,7 +2,11 @@ import antfu from "@antfu/eslint-config"
 
 export default antfu({
   ignores: ["**/*.json"],
+  markdown: false,
   stylistic: false,
+  toml: false,
+  vue: false,
+  yaml: false,
   test: { overrides: { "test/no-import-node-test": "off" } },
   typescript: {
     tsconfigPath: "tsconfig.json",
