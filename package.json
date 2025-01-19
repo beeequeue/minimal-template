@@ -5,7 +5,7 @@
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@9.15.2",
+  "packageManager": "pnpm@10.0.0",
   "engines": {
     "node": "^22"
   },
@@ -36,9 +36,12 @@
     "simple-git-hooks": "2.11.1",
     "tsup": "8.3.5",
     "typescript": "5.7.3",
-    "vitest": "3.0.0"
+    "vitest": "3.0.2"
   },
   "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ],
     "overrides": {
       "@eslint/markdown": "-",
       "@stylistic/eslint-plugin": "-",
