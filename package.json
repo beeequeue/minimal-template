@@ -5,7 +5,7 @@
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
   "private": true,
-  "packageManager": "pnpm@10.4.1",
+  "packageManager": "pnpm@10.5.2",
   "engines": {
     "node": "^22"
   },
@@ -29,14 +29,14 @@
     "@antfu/eslint-config": "4.3.0",
     "@tsconfig/node22": "22.0.0",
     "@tsconfig/strictest": "2.0.5",
-    "@types/node": "22.13.5",
+    "@types/node": "22.13.7",
     "eslint": "9.21.0",
     "nano-staged": "0.8.0",
     "prettier": "3.5.2",
     "simple-git-hooks": "2.11.1",
-    "tsup": "8.3.6",
-    "typescript": "5.7.3",
-    "vitest": "3.0.6"
+    "tsup": "8.4.0",
+    "typescript": "5.8.2",
+    "vitest": "3.0.7"
   },
   "pnpm": {
     "overrides": {
