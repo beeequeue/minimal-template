@@ -7,10 +7,10 @@ export default antfu({
   jsonc: false,
   jsx: false,
   toml: false,
-  yaml: false,
   test: { overrides: { "test/no-import-node-test": "off" } },
   typescript: {
     tsconfigPath: "tsconfig.json",
+    ignoresTypeAware: ["copy.ts"],
     overrides: {
       "no-console": "off",
       "ts/no-use-before-define": "off",
