@@ -1,0 +1,12 @@
+overrides:
+  "@eslint/markdown": "-"
+  "@stylistic/eslint-plugin": "-"
+  "eslint-plugin-jsonc": "-"
+  "eslint-plugin-toml": "-"
+  "eslint-plugin-vue": "-"
+  "eslint-processor-vue-blocks": "-"
+  "eslint-plugin-yml": "-"
+  "jsonc-eslint-parser": "-"
+  "toml-eslint-parser": "-"
+  "yaml-eslint-parser": "-"
+  "is-core-module": "npm:@nolyfill/is-core-module@^1"
