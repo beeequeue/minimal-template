@@ -17,8 +17,8 @@ It has:
 
 # Use
 
-Run `copy.mjs` with [`zx`](https://github.com/google/zx):
+Run `copy.ts` with deno:
 
 ```shell
-zx copy.mjs [path to new project]
+deno run --no-lock -A copy.ts [path to new project]
 ```
