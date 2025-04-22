@@ -26,16 +26,16 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.11.0",
+    "@antfu/eslint-config": "4.12.0",
     "@tsconfig/node22": "22.0.1",
     "@tsconfig/strictest": "2.0.5",
-    "@types/node": "22.13.16",
-    "eslint": "9.23.0",
+    "@types/node": "22.14.1",
+    "eslint": "9.25.1",
     "nano-staged": "0.8.0",
     "prettier": "3.5.3",
     "simple-git-hooks": "2.12.1",
-    "tsdown": "^0.9.2",
-    "typescript": "5.8.2",
-    "vitest": "3.1.1"
+    "tsdown": "^0.9.3",
+    "typescript": "5.8.3",
+    "vitest": "3.1.2"
   }
 }
