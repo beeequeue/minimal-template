@@ -4,6 +4,9 @@
     // Output
     "noEmit": true,
     "sourceMap": true,
+    "composite": true,
+    "isolatedDeclarations": true,
+    "tsBuildInfoFile": "node_modules/.cache/typescript/.tsbuildinfo",
 
     // Modules
     "module": "esnext",
@@ -22,11 +25,12 @@
     "noUncheckedIndexedAccess": false,
     "exactOptionalPropertyTypes": false,
     "verbatimModuleSyntax": false,
+    "allowJs": false,
+    "checkJs": false,
 
     // Extra types
     "types": ["node"]
   },
-
-  "include": ["**/*.ts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist", "copy.ts"]
 }
