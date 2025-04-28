@@ -21,7 +21,4 @@ export default defineConfig({
 
   minify: true,
   sourcemap: true,
-  // outputOptions: (op) => {
-  //   op.polyfillRequire = true
-  // },
 })

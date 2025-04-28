@@ -1,3 +1,6 @@
+savePrefix: ""
+shellEmulator: true
+
 overrides:
   "@eslint/markdown": "-"
   "@stylistic/eslint-plugin": "-"
