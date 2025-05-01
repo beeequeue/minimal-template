@@ -14,7 +14,6 @@ export default defineConfig({
   },
 
   platform: "node",
-  target: "node22",
   format: "esm",
   dts: true,
   fixedExtension: true,
