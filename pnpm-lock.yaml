@@ -11,9 +11,14 @@ overrides:
   eslint-plugin-toml: '-'
   eslint-plugin-vue: '-'
   eslint-processor-vue-blocks: '-'
+  is-core-module: npm:@nolyfill/is-core-module@^1
   jsonc-eslint-parser: '-'
   toml-eslint-parser: '-'
-  is-core-module: npm:@nolyfill/is-core-module@^1
+
+patchedDependencies:
+  tsdown:
+    hash: 42f1911c7dca29f2083e73a2bce8d50192f041050325d8631463a4c3587f6fb0
+    path: patches/tsdown.patch
 
 importers:
 
@@ -45,7 +50,7 @@ importers:
         version: 2.13.0
       tsdown:
         specifier: 0.11.0-beta.1
-        version: 0.11.0-beta.1(typescript@5.8.3)
+        version: 0.11.0-beta.1(patch_hash=42f1911c7dca29f2083e73a2bce8d50192f041050325d8631463a4c3587f6fb0)(typescript@5.8.3)
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -3692,7 +3697,7 @@ snapshots:
     dependencies:
       typescript: 5.8.3
 
-  tsdown@0.11.0-beta.1(typescript@5.8.3):
+  tsdown@0.11.0-beta.1(patch_hash=42f1911c7dca29f2083e73a2bce8d50192f041050325d8631463a4c3587f6fb0)(typescript@5.8.3):
     dependencies:
       ansis: 3.17.0
       cac: 6.7.14

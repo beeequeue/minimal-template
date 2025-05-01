@@ -1,0 +1,13 @@
+diff --git a/dist/index.js b/dist/index.js
+index 32553cd20ad1a29aafc0c9b572cc4aada1018aca..7840a8f32b48ace8f0a110d5b0cd3c8d55d7614f 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -15,7 +15,7 @@ import { createHooks } from "hookable";
+ import readline from "node:readline";
+ import { pathToFileURL } from "node:url";
+ import { loadConfig } from "unconfig";
+-import minVersion from "semver/ranges/min-version";
++import minVersion from "semver/ranges/min-version.js";
+ import { up } from "empathic/find";
+ 
+ //#region src/features/clean.ts
