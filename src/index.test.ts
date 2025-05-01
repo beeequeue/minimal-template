@@ -4,6 +4,6 @@ import { hello } from "./index.js"
 
 describe("test", () => {
   it("test", () => {
-    expect(hello).toBe("world")
+    expect(hello()).toBe("world")
   })
 })
