@@ -9,8 +9,5 @@ overrides:
   jsonc-eslint-parser: "-"
   toml-eslint-parser: "-"
 
-patchedDependencies:
-  tsdown: patches/tsdown.patch
-
 savePrefix: ""
 shellEmulator: true
