@@ -11,6 +11,18 @@ export default antfu({
   typescript: {
     tsconfigPath: "tsconfig.json",
     ignoresTypeAware: ["copy.ts", "*.config.*"],
+
+    overridesTypeAware: {
+      "ts/no-floating-promises": [
+        "error",
+        {
+          allowForKnownSafeCalls: [
+            { from: "package", package: "node:test", name: ["describe", "it", "test"] },
+          ],
+        },
+      ],
+    },
+
     overrides: {
       "no-console": "off",
       "ts/no-use-before-define": "off",

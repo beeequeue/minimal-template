@@ -10,8 +10,8 @@ This is my minimal template that I use for all my new projects.
 
 It has:
 
-- [tsup](https://tsup.egoist.dev) for easily bundling code
-- [vitest](https://vitest.dev) for testing
+- [tsdown](https://tsdown.dev) for easily bundling code
+- node:test for testing
 - All the editor configurations you might need
 - Automatic code formatting on committing with prettier and simple-git-hooks
 

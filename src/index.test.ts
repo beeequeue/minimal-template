@@ -1,9 +1,10 @@
-import { describe, expect, it } from "vitest"
+import assert from "node:assert"
+import { describe, it } from "node:test"
 
 import { hello } from "./index.js"
 
 describe("test", () => {
   it("test", () => {
-    expect(hello()).toBe("world")
+    assert.equal(hello(), "world")
   })
 })

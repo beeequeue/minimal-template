@@ -4,11 +4,11 @@ overrides:
   "@eslint/markdown": "-"
   "@modelcontextprotocol/sdk": "-"
   "@stylistic/eslint-plugin": "-"
-  eslint>zod: "-"
   eslint-plugin-jsonc: "-"
   eslint-plugin-toml: "-"
   eslint-plugin-vue: "-"
   eslint-processor-vue-blocks: "-"
+  eslint>zod: "-"
   is-core-module: npm:@nolyfill/is-core-module@^1
   jsonc-eslint-parser: "-"
   safe-buffer: npm:@nolyfill/safe-buffer@^1
