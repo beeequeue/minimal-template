@@ -32,11 +32,11 @@ jobs:
         if: ${{ !steps.cache.outputs.cache-hit }}
         run: go install github.com/rhysd/actionlint/cmd/actionlint@${{ env.ACTIONLINT_VERSION }}
 
+      - uses: actions/checkout@v4
+
       # Add matcher so we get annotations in PRs
       - name: add matcher
         run: echo "::add-matcher::.github/matchers/actionlint.json"
-
-      - uses: actions/checkout@v4
 
       # Run it!
       - name: lint workflow files
