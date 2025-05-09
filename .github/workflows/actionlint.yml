@@ -26,8 +26,6 @@ jobs:
         with:
           path: /root/go/bin/actionlint
           key: actionlint-${{ runner.os }}-${{ env.GO_VERSION }}
-          restore-keys: |
-            actionlint-${{ runner.os }}-${{ env.GO_VERSION }}
 
       # Install it from a GitHub link with commit hash, meaning we're building it from source from a known version
       - name: install from source
