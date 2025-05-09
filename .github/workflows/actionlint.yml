@@ -1,10 +1,9 @@
 name: actionlint
 
 on:
+  push:
+    branches: [main]
   pull_request:
-    paths:
-      - .github/workflows/*
-      - .github/matchers/*
 
 jobs:
   actionlint:
