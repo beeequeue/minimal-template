@@ -2,8 +2,9 @@
 
 <!--
 [![npm](https://img.shields.io/npm/v/NAME_HERE)](https://www.npmjs.com/package/NAME_HERE)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/NAME_HERE)
-![node-current](https://img.shields.io/node/v/NAME_HERE)
+![node LTS+](https://img.shields.io/node/v/NAME_HERE)
+[![install size](https://packagephobia.com/badge?p=NAME_HERE)](https://packagephobia.com/result?p=NAME_HERE)
+[![bundle size](https://img.shields.io/bundlejs/size/NAME_HERE)](https://bundlejs.com/?q=NAME_HERE)
 -->
 
 This is my minimal template that I use for all my new projects.
