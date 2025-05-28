@@ -18,7 +18,7 @@
     "import": "./dist/index.js"
   },
   "nano-staged": {
-    "*.{js,jsx,ts,tsx,json,json5,yaml,yml,css,scss,md}": [
+    "*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,json,json5,yaml,yml,css,scss,md}": [
       "prettier --write"
     ]
   },
@@ -34,15 +34,15 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.13.1",
+    "@antfu/eslint-config": "4.13.2",
     "@tsconfig/node22": "22.0.2",
     "@tsconfig/strictest": "2.0.5",
-    "@types/node": "22.15.21",
+    "@types/node": "22.15.24",
     "eslint": "9.27.0",
     "nano-staged": "0.8.0",
     "prettier": "3.5.3",
     "simple-git-hooks": "2.13.0",
-    "tsdown": "0.11.12",
+    "tsdown": "0.12.4",
     "typescript": "5.8.3"
   }
 }
