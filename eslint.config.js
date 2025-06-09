@@ -47,7 +47,6 @@ export default antfu({
     overrides: {
       "no-console": "off",
       "antfu/no-top-level-await": "off",
-      "import/consistent-type-specifier-style": "off",
       "node/prefer-global/process": "off",
       "ts/consistent-type-definitions": "off",
       "ts/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],

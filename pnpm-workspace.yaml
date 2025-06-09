@@ -11,7 +11,6 @@ overrides:
   "@antfu/eslint-config>toml-eslint-parser": "-"
   "@antfu/eslint-config>vitest": "-"
   eslint-plugin-pnpm>jsonc-eslint-parser: "-"
-  is-core-module: npm:@nolyfill/is-core-module@^1
 
 savePrefix: ""
 shellEmulator: true
