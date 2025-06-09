@@ -42,9 +42,13 @@
       ],
       automerge: true,
     },
-    // Don't touch nolyfill overrides
+    // Don't pin nolyfill overrides, node versions
     {
       packagePatterns: ["@nolyfill/*", "@socketregistry/*"],
+      rangeStrategy: "replace",
+    },
+    {
+      matchDatasources: ["node-version"],
       rangeStrategy: "replace",
     },
     // Pin GH Actions (action@hash #v0.0.0)
