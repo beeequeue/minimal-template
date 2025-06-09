@@ -18,40 +18,36 @@
       matchManagers: ["npm"],
       automerge: true,
     },
-    // Build deps can be bundled together
     {
       groupName: "build deps",
-      packagePatterns: [
-        "esbuild",
-        "ts(down|up)",
-        "roll(down|up)",
-        "(rs|web)pack",
-        "unplugin",
+      matchPackageNames: [
+        "/esbuild/",
+        "/ts(down|up)/",
+        "/roll(down|up)/",
+        "/(rs|web)pack/",
+        "/unplugin/",
       ],
     },
-    // Linting can be bunched together
     {
       groupName: "dev deps",
-      packagePatterns: [
-        "^@tsconfig/",
-        "eslint",
-        "-staged$",
-        "prettier",
-        "typescript",
-        "simple-git-hooks",
-      ],
       automerge: true,
+      matchPackageNames: [
+        "/^@tsconfig//",
+        "/eslint/",
+        "/-staged$/",
+        "/prettier/",
+        "/typescript/",
+        "/simple-git-hooks/",
+      ],
     },
-    // Don't pin nolyfill overrides, node versions
     {
-      packagePatterns: ["@nolyfill/*", "@socketregistry/*"],
       rangeStrategy: "replace",
+      matchPackageNames: ["/@nolyfill/*/", "/@socketregistry/*/"],
     },
     {
       matchDatasources: ["node-version"],
       rangeStrategy: "replace",
     },
-    // Pin GH Actions (action@hash #v0.0.0)
     {
       matchDepTypes: ["action"],
       pinDigests: true,
