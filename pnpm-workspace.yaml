@@ -14,4 +14,4 @@ overrides:
 
 savePrefix: ""
 shellEmulator: true
-minimumReleaseAge: 4320
+minimumReleaseAge: 1440
