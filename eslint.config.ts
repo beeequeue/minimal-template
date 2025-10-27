@@ -1,26 +1,5 @@
 import antfu from "@antfu/eslint-config"
 
-const sortImports = {
-  "perfectionist/sort-imports": [
-    "error",
-    {
-      type: "natural",
-      internalPattern: ["^@/", "^~/", "^#[a-zA-Z0-9-]+/"],
-      newlinesBetween: "always",
-      groups: [
-        ["builtin", "builtin-type"],
-        ["external", "external-type"],
-        ["internal", "internal-type"],
-        ["parent", "parent-type"],
-        ["sibling", "sibling-type"],
-        ["index", "index-type"],
-        "object",
-        "unknown",
-      ],
-    },
-  ],
-}
-
 export default antfu({
   ignores: ["**/*.json"],
   markdown: false,
@@ -59,7 +38,24 @@ export default antfu({
       "ts/no-use-before-define": "off",
       "unused-imports/no-unused-vars": "off",
 
-      ...sortImports,
+      "perfectionist/sort-imports": [
+        "error",
+        {
+          type: "natural",
+          internalPattern: ["^@/", "^~/", "^#[a-zA-Z0-9-]+/"],
+          newlinesBetween: "always",
+          groups: [
+            ["builtin", "builtin-type"],
+            ["external", "external-type"],
+            ["internal", "internal-type"],
+            ["parent", "parent-type"],
+            ["sibling", "sibling-type"],
+            ["index", "index-type"],
+            "object",
+            "unknown",
+          ],
+        },
+      ],
     },
   },
 })
