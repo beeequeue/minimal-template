@@ -34,11 +34,11 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "6.1.0",
+    "@antfu/eslint-config": "6.2.0",
     "@tsconfig/node24": "24.0.1",
-    "@tsconfig/strictest": "2.0.6",
+    "@tsconfig/strictest": "2.0.7",
     "@types/node": "24.9.1",
-    "eslint": "9.38.0",
+    "eslint": "9.39.1",
     "nano-staged": "0.8.0",
     "prettier": "3.6.2",
     "simple-git-hooks": "2.13.1",
