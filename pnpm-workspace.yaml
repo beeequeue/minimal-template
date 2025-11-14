@@ -15,3 +15,8 @@ overrides:
 savePrefix: ""
 shellEmulator: true
 minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - "@oxc-project/*"
+  - "@rolldown/*"
+  - tsdown
+  - rolldown
