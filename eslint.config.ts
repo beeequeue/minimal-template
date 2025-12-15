@@ -6,6 +6,7 @@ export default antfu({
   stylistic: false,
   jsonc: false,
   jsx: false,
+  pnpm: false,
   toml: false,
   test: { overrides: { "test/no-import-node-test": "off" } },
   typescript: {

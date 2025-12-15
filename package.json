@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.25.0",
   "engines": {
     "node": "^24"
   },
@@ -14,8 +14,7 @@
     "CHANGELOG.md"
   ],
   "exports": {
-    "types": "./dist/index.d.ts",
-    "import": "./dist/index.js"
+    "default": "./dist/index.mjs"
   },
   "lint-staged": {
     "*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,json,json5,yaml,yml,css,scss,md}": [
@@ -33,15 +32,15 @@
     "typecheck": "tsc --noEmit --project tsconfig.json"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "6.2.0",
+    "@antfu/eslint-config": "6.7.1",
     "@tsconfig/node24": "24.0.3",
     "@tsconfig/strictest": "2.0.8",
     "@types/node": "24.10.1",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "lint-staged": "16.2.7",
-    "prettier": "3.7.3",
+    "prettier": "3.7.4",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.16.8",
+    "tsdown": "0.17.4",
     "typescript": "5.9.3"
   }
 }
