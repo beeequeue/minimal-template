@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "author": "BeeeQueue <adam@haglund.dev>",
   "license": "MIT",
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.28.1",
   "engines": {
     "node": "^24"
   },
@@ -33,14 +33,14 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "6.7.1",
-    "@tsconfig/node24": "24.0.3",
+    "@tsconfig/node24": "24.0.4",
     "@tsconfig/strictest": "2.0.8",
-    "@types/node": "24.10.1",
+    "@types/node": "25.0.10",
     "eslint": "9.39.2",
     "lint-staged": "16.2.7",
-    "prettier": "3.7.4",
+    "prettier": "3.8.1",
     "simple-git-hooks": "2.13.1",
-    "tsdown": "0.17.4",
+    "tsdown": "0.20.1",
     "typescript": "5.9.3"
   }
 }
