@@ -18,6 +18,5 @@ export default defineConfig({
   dts: true,
   fixedExtension: true,
 
-  minify: true,
-  sourcemap: true,
+  minify: "dce-only",
 })
