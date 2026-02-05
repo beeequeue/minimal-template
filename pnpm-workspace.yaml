@@ -14,6 +14,7 @@ peerDependencyRules:
   allowedVersions:
     eslint: ">=10.0.0-rc.2"
 
+enableGlobalVirtualStore: false
 savePrefix: ""
 shellEmulator: true
 minimumReleaseAge: 1440
