@@ -3,35 +3,25 @@
   "compilerOptions": {
     // Output
     "noEmit": true,
-    "sourceMap": true,
-    "composite": true,
-    "isolatedDeclarations": true,
-    "tsBuildInfoFile": "node_modules/.cache/typescript/.tsbuildinfo",
 
-    // Modules
+    // Modules & resolution
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "baseUrl": "./src",
-    "paths": {
-      "~/*": ["src/*"]
-    },
+    "esModuleInterop": false,
     "allowImportingTsExtensions": true,
+    "paths": {
+      "~/*": ["./src/*"]
+    },
 
     // Lessen strictness
-    "importsNotUsedAsValues": "remove",
     "noImplicitReturns": false,
     "noPropertyAccessFromIndexSignature": false,
-    "noUncheckedIndexedAccess": false,
     "exactOptionalPropertyTypes": false,
-    "verbatimModuleSyntax": false,
-    "allowJs": false,
-    "checkJs": false,
 
     // Extra types
     "types": ["node"]
   },
-  "include": ["src/**/*.ts"],
+  "include": ["./"],
   "exclude": ["node_modules", "dist", "copy.ts"]
 }
