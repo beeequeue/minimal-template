@@ -1,3 +1,15 @@
+allowBuilds:
+  simple-git-hooks: false
+
+minimumReleaseAge: 1440
+minimumReleaseAgeExclude:
+  - "@oxc-project/*"
+  - "@rolldown/*"
+  - rolldown
+  - rolldown-plugin-dts
+  - tsdown
+  - unrun
+
 overrides:
   "@antfu/eslint-config>@eslint/markdown": "-"
   "@antfu/eslint-config>@stylistic/eslint-plugin": "-"
@@ -10,18 +22,5 @@ overrides:
   "@antfu/eslint-config>vitest": "-"
   eslint-plugin-pnpm>jsonc-eslint-parser: "-"
 
-peerDependencyRules:
-  allowedVersions:
-    eslint: ">=10.0.0-rc.2"
-
-enableGlobalVirtualStore: false
 savePrefix: ""
 shellEmulator: true
-minimumReleaseAge: 1440
-minimumReleaseAgeExclude:
-  - "@oxc-project/*"
-  - "@rolldown/*"
-  - rolldown
-  - rolldown-plugin-dts
-  - tsdown
-  - unrun

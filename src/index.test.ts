@@ -4,7 +4,7 @@ import { describe, it } from "node:test"
 import { hello } from "./index.ts"
 
 void describe("test", () => {
-  it("test", () => {
+  void it("test", () => {
     assert.equal(hello(), "world")
   })
 })
