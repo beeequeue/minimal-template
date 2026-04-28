@@ -5,6 +5,7 @@ import { defineConfig } from "tsdown"
 export default defineConfig({
   entry: ["src/index.ts"],
   outDir: "dist",
+  exports: true,
 
   env: {
     NODE_ENV: process.env.NODE_ENV ?? "production",

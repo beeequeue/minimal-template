@@ -10,6 +10,9 @@ minimumReleaseAgeExclude:
   - tsdown
   - unrun
 
+dedupePeers: true
+dedupePeerDependents: true
+
 overrides:
   "@antfu/eslint-config>@eslint/markdown": "-"
   "@antfu/eslint-config>@stylistic/eslint-plugin": "-"
