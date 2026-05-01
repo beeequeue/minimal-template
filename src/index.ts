@@ -1,4 +1,4 @@
 export const hello = (): string => {
-  console.log("hello world")
-  return "world"
+	console.log("hello world")
+	return "world"
 }

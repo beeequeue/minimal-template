@@ -1,27 +1,27 @@
 {
-  "extends": ["@tsconfig/node24/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
-  "compilerOptions": {
-    // Output
-    "noEmit": true,
+	"extends": ["@tsconfig/node24/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
+	"compilerOptions": {
+		// Output
+		"noEmit": true,
 
-    // Modules & resolution
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "allowImportingTsExtensions": true,
-    "paths": {
-      "~/*": ["./src/*"]
-    },
+		// Modules & resolution
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"allowImportingTsExtensions": true,
+		"paths": {
+			"~/*": ["./src/*"]
+		},
 
-    // Lessen strictness
-    "noImplicitReturns": false,
-    "noPropertyAccessFromIndexSignature": false,
-    "exactOptionalPropertyTypes": false,
+		// Lessen strictness
+		"noImplicitReturns": false,
+		"noPropertyAccessFromIndexSignature": false,
+		"exactOptionalPropertyTypes": false,
 
-    // Extra types
-    "types": ["node"],
-    "lib": ["ESNext"]
-  },
-  "include": ["./"],
-  "exclude": ["node_modules", "dist", "copy.ts"]
+		// Extra types
+		"types": ["node"],
+		"lib": ["ESNext"]
+	},
+	"include": ["./"],
+	"exclude": ["node_modules", "dist", "copy.ts"]
 }
