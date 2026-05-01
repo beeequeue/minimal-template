@@ -6,6 +6,5 @@ dist/
 .idea/
 !.idea/jsLibraryMappings.xml
 !.idea/template.iml
-!.idea/prettier.xml
 
 .env

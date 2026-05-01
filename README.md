@@ -14,7 +14,7 @@ It has:
 - [tsdown](https://tsdown.dev) for easily bundling code
 - node:test for testing
 - All the editor configurations you might need
-- Automatic code formatting on committing with prettier and simple-git-hooks
+- Automatic code formatting on committing with oxfmt and simple-git-hooks
 
 # Use
 
