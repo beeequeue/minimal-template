@@ -1,17 +1,10 @@
 allowBuilds:
   simple-git-hooks: false
 
-minimumReleaseAge: 2880 # 4320
-#minimumReleaseAgeExclude:
-#  - "@oxc-project/*"
-#  - "@rolldown/*"
-#  - rolldown
-#  - rolldown-plugin-dts
-#  - tsdown
-#  - unrun
-
 dedupePeers: true
 dedupePeerDependents: true
+
+minimumReleaseAge: 4320
 
 overrides:
   "@antfu/eslint-config>@eslint/markdown": "-"
@@ -24,7 +17,10 @@ overrides:
   "@antfu/eslint-config>toml-eslint-parser": "-"
   "@antfu/eslint-config>vitest": "-"
   eslint-plugin-pnpm>jsonc-eslint-parser: "-"
-  eslint-plugin-unicorn>core-js-compat: "-"
 
 savePrefix: ""
 shellEmulator: true
+
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - tinyexec@1.2.2
