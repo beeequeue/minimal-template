@@ -5,6 +5,8 @@ dedupePeers: true
 dedupePeerDependents: true
 
 minimumReleaseAge: 4320
+minimumReleaseAgeExclude:
+  - "@tsconfig/node26@26.0.0"
 
 overrides:
   "@antfu/eslint-config>@eslint/markdown": "-"
