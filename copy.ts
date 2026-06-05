@@ -1,29 +1,32 @@
-import { copy } from "https://deno.land/std@0.182.0/fs/mod.ts"
-import $ from "https://deno.land/x/dax@0.31.0/mod.ts"
+import fs from "node:fs"
+import path from "node:path"
+import process from "node:process"
 
-if (Deno.args[0] == null) {
+import $ from "jsr:@david/dax@0.48.3"
+
+const targetPath = process.argv[2]
+if (targetPath == null) {
 	console.error("Missing directory argument")
-	Deno.exit(1)
+	process.exit(1)
 }
 
-const newDir = $.path(Deno.args[0]).resolve()
+const newDir = path.resolve(targetPath!)
 console.log(`Creating new project at "${newDir}"`)
 
 const extraIgnore = new Set(["copy.mjs", "copy.ts"])
 const files = (await $`git ls-tree -r main --name-only`.lines()).filter(
-	(item) => Boolean(item) && !extraIgnore.has(item),
+	(item: string) => Boolean(item) && !extraIgnore.has(item),
 )
 
-await $`mkdir -p ${newDir}`
 for (const filePath of files) {
-	await $`mkdir -p ${newDir.join($.path(filePath).dirname()).toString()}`
-	await copy(filePath, newDir.join(filePath).toString())
+	fs.mkdirSync(path.join(newDir, path.dirname(filePath)), { recursive: true })
+	fs.cpSync(filePath, path.join(newDir, filePath), { recursive: true })
 }
 
-$.cd(newDir)
+process.chdir(newDir)
 
-const name = $.path(Deno.args[0]).basename()
-await Deno.writeTextFile(
+const name = path.basename(targetPath!)
+fs.writeFileSync(
 	"README.md",
 	`
 # ${name}
@@ -36,9 +39,9 @@ await Deno.writeTextFile(
 `.trim(),
 )
 
-await Deno.writeTextFile(
+fs.writeFileSync(
 	"package.json",
-	(await Deno.readTextFile("package.json")).replace("@beequeue/project-template", name),
+	fs.readFileSync("package.json", "utf8").replace("@beequeue/project-template", name),
 )
 
 // Remove git history
