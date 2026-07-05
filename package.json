@@ -5,7 +5,7 @@
 	"version": "0.0.0",
 	"author": "BeeeQueue <adam@haglund.dev>",
 	"license": "MIT",
-	"packageManager": "pnpm@11.9.0",
+	"packageManager": "pnpm@11.3.0",
 	"engines": {
 		"node": "^26"
 	},
@@ -21,26 +21,25 @@
 			"oxfmt --write --no-error-on-unmatched-pattern"
 		]
 	},
-	"simple-git-hooks": {
-		"pre-commit": "./node_modules/.bin/lint-staged"
-	},
 	"scripts": {
 		"build": "tsdown",
 		"lint": "eslint --flag unstable_native_nodejs_ts_config",
 		"lint:format": "oxfmt --check",
 		"test": "node --test",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"lint-staged:setup": "pnpm run \"/^lint-staged:setup:/\"",
+		"lint-staged:setup:1": "git config set hook.\"lint-staged\".event pre-commit",
+		"lint-staged:setup:2": "git config set hook.\"lint-staged\".command \"node node_modules/lint-staged/bin/lint-staged.js\""
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "9.1.0",
 		"@tsconfig/node26": "26.0.0",
 		"@tsconfig/strictest": "2.0.8",
-		"@types/node": "26.1.0",
-		"eslint": "10.6.0",
+		"@types/node": "26.1.1",
+		"eslint": "10.7.0",
 		"lint-staged": "17.0.8",
-		"oxfmt": "0.57.0",
-		"simple-git-hooks": "2.13.1",
-		"tsdown": "0.22.3",
+		"oxfmt": "0.58.0",
+		"tsdown": "0.22.7",
 		"typescript": "6.0.3"
 	}
 }
