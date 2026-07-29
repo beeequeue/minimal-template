@@ -5,7 +5,7 @@
 	"version": "0.0.0",
 	"author": "BeeeQueue <adam@haglund.dev>",
 	"license": "MIT",
-	"packageManager": "pnpm@11.3.0",
+	"packageManager": "pnpm@11.17.0",
 	"engines": {
 		"node": "^26"
 	},
@@ -32,14 +32,14 @@
 		"lint-staged:setup:2": "git config set hook.\"lint-staged\".command \"node node_modules/lint-staged/bin/lint-staged.js\""
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "9.1.0",
+		"@antfu/eslint-config": "9.2.0",
 		"@tsconfig/node26": "26.0.0",
 		"@tsconfig/strictest": "2.0.8",
 		"@types/node": "26.1.1",
-		"eslint": "10.7.0",
-		"lint-staged": "17.0.8",
-		"oxfmt": "0.58.0",
-		"tsdown": "0.22.7",
+		"eslint": "10.8.0",
+		"lint-staged": "17.2.0",
+		"oxfmt": "0.60.0",
+		"tsdown": "0.22.14",
 		"typescript": "6.0.3"
 	}
 }
