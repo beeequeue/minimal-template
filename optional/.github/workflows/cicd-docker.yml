@@ -100,9 +100,9 @@ jobs:
     environment:
       name: docker-image
     permissions:
-      contents: read
-      packages: write
-      id-token: write
+      contents: read # read project data
+      packages: write # writing to docker registry
+      id-token: write # oidc for docker registry
 
     steps:
       - name: Docker meta
