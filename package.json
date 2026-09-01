@@ -32,11 +32,11 @@
 		"lint-staged:setup:2": "git config set hook.\"lint-staged\".command \"node node_modules/lint-staged/bin/lint-staged.js\""
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "9.2.0",
+		"@antfu/eslint-config": "9.3.0",
 		"@tsconfig/node26": "26.0.1",
 		"@tsconfig/strictest": "2.0.8",
 		"@types/node": "26.2.0",
-		"eslint": "10.8.1",
+		"eslint": "10.9.1",
 		"lint-staged": "17.3.0",
 		"oxfmt": "0.63.0",
 		"tsdown": "0.22.14",
